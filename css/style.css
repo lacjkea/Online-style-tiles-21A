@@ -15,29 +15,17 @@ use the fonts in other ways in the font hierarchy etc. */
 /* change / delete some of these - note: all variables are listed twice */
 
 :root {
-  --bg-color: red;
-  --link-color: green;
-  --link-hover-color: blue;
-  --color-4: hotpink;
-  --color-5: rebeccapurple;
+  --bg-color: #bbd691;
+  --link-color: #f1b9b8;
+  --link-hover-color: #fdc239;
+  --color-4: #f2d194;
+  --color-5: #d5eff0;
 
-  --primary-font: "Open Sans", sans-serif;
-  --secondary-font: "Droid Serif", serif;
-  --main-text-color: #000;
+  --primary-font: "Montserrat", sans-serif;
+  --secondary-font: "Open Sans", sans-serif;
+  --main-text-color: #0e0e0e;
 
   --white-space: 1rem;
-
-  --bg-color: #000;
-  --link-color: #000;
-  --link-hover-color: #000;
-  --color-4: #000;
-  --color-5: #000;
-
-  --primary-font: sans-serif;
-  --secondary-font: serif;
-  --main-text-color: #000;
-
-  --white-space: 2rem;
 }
 
 html {
@@ -144,6 +132,7 @@ ul li:last-child {
   height: 30vw;
   width: 40%;
   margin-right: 5vw;
+  background-size: cover;
 }
 
 .texture-swatch-1 {
@@ -151,15 +140,15 @@ ul li:last-child {
 }
 
 .texture-swatch-2 {
-  background: url(../img/subtle_grunge.png) top left repeat;
+  background: url(../img//girl.png) top left repeat;
 }
 
 .texture-swatch-1 {
-  background: url(../img/pw_maze_white.png) top left repeat;
+  background: url(../img/drink.png) top left repeat;
 }
 
 .texture-swatch-3 {
-  background: url(../img/white_paperboard.png) top left repeat;
+  background: url(../img/ballon.png) top left repeat;
 }
 
 .images ul {
