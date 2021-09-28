@@ -87,7 +87,6 @@ section {
 }
 
 .section-heading {
-  font-style: italic;
   font-size: 1.3rem;
   color: #777;
   margin: 0.5rem 0;
@@ -102,6 +101,7 @@ ul {
   margin-right: 5vw;
   height: 15vw;
   width: 20%;
+  text-align: center;
 }
 
 ul li:last-child {
@@ -202,6 +202,7 @@ button {
   color: white;
   transition: all 0.2s ease;
   cursor: pointer;
+  border: 0;
   /* margin: 0 1rem 0 0; */
 }
 
@@ -226,12 +227,13 @@ button:hover {
 .h1-sample {
   font-size: 2.4rem;
   font-weight: bold;
+  letter-spacing: 3px;
 }
 
 .h2-sample {
   font-family: var(--secondary-font);
-  font-style: italic;
   font-size: 1.25rem;
+  font-weight: bold;
 }
 
 p.typography-sample {
@@ -249,18 +251,13 @@ em {
 }
 
 a {
-  font-family: var(--primary-font);
+  font-family: var(--secondary-font);
   color: var(--link-color);
-  font-weight: bold;
-  text-decoration: none;
   transition: all 0.2s;
 }
 
 a:hover {
-  color: var(--link-hover-color);
-  font-size: 4rem;
-  background-color: var(--color-4);
-  opacity: 0.1;
+  opacity: 70%;
 }
 
 p[class*="font-details-"] {
