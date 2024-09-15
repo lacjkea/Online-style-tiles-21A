@@ -15,29 +15,17 @@ use the fonts in other ways in the font hierarchy etc. */
 /* change / delete some of these - note: all variables are listed twice */
 
 :root {
-  --bg-color: red;
-  --link-color: green;
-  --link-hover-color: blue;
-  --color-4: hotpink;
-  --color-5: rebeccapurple;
+  --bg-color: #bbd691;
+  --link-color: #f1b9b8;
+  --link-hover-color: #fdc239;
+  --color-4: #f2d194;
+  --color-5: #d5eff0;
 
-  --primary-font: "Open Sans", sans-serif;
-  --secondary-font: "Droid Serif", serif;
-  --main-text-color: #000;
+  --primary-font: "Montserrat", sans-serif;
+  --secondary-font: "Open Sans", sans-serif;
+  --main-text-color: #0e0e0e;
 
   --white-space: 1rem;
-
-  --bg-color: #000;
-  --link-color: #000;
-  --link-hover-color: #000;
-  --color-4: #000;
-  --color-5: #000;
-
-  --primary-font: sans-serif;
-  --secondary-font: serif;
-  --main-text-color: #000;
-
-  --white-space: 2rem;
 }
 
 html {
@@ -99,7 +87,6 @@ section {
 }
 
 .section-heading {
-  font-style: italic;
   font-size: 1.3rem;
   color: #777;
   margin: 0.5rem 0;
@@ -114,6 +101,7 @@ ul {
   margin-right: 5vw;
   height: 15vw;
   width: 20%;
+  text-align: center;
 }
 
 ul li:last-child {
@@ -144,6 +132,7 @@ ul li:last-child {
   height: 30vw;
   width: 40%;
   margin-right: 5vw;
+  background-size: cover;
 }
 
 .texture-swatch-1 {
@@ -151,15 +140,39 @@ ul li:last-child {
 }
 
 .texture-swatch-2 {
-  background: url(../img/subtle_grunge.png) top left repeat;
+  background: url(../img//girl.png) top left repeat;
 }
 
 .texture-swatch-1 {
-  background: url(../img/pw_maze_white.png) top left repeat;
+  background: url(../img/drink.png) top left repeat;
 }
 
 .texture-swatch-3 {
-  background: url(../img/white_paperboard.png) top left repeat;
+  background: url(../img/ballon.png) top left repeat;
+}
+
+.graphic li {
+  height: 20vh;
+  width: 40%;
+  margin-right: 1vw;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.graphic-swatch-1 {
+  background: url(../img/pineapple.png) top left repeat;
+}
+
+.graphic-swatch-2 {
+  background: url(../img/strawberry.png) top left repeat;
+}
+
+.graphic-swatch-3 {
+  background: url(../img/mango.png) top left repeat;
+}
+
+.graphic-swatch-4 {
+  background: url(../img/lime.png) top left repeat;
 }
 
 .images ul {
@@ -181,17 +194,15 @@ ul li:last-child {
 
 button {
   padding: 1rem;
-  border-radius: 4px;
   background: var(--link-color);
   text-align: center;
   text-decoration: none;
-  font: bold 1.25em/1 var(--primary-font);
+  font: var(--secondary-font);
   letter-spacing: 1px;
   color: white;
-  text-transform: uppercase;
-  text-shadow: 0px -1px 0px #0374a0;
   transition: all 0.2s ease;
   cursor: pointer;
+  border: 0;
   /* margin: 0 1rem 0 0; */
 }
 
@@ -203,16 +214,10 @@ button:focus,
 button:active,
 button:focus-within {
   outline: 0;
-  border-radius: 4px;
 }
 
 button:hover {
-  background-color: var(--link-hover-color);
-  transform: scale(3) rotate(40deg);
-}
-
-button:active {
-  background-color: var(--bg-color);
+  opacity: 80%;
 }
 
 .typography-main {
@@ -222,12 +227,13 @@ button:active {
 .h1-sample {
   font-size: 2.4rem;
   font-weight: bold;
+  letter-spacing: 3px;
 }
 
 .h2-sample {
   font-family: var(--secondary-font);
-  font-style: italic;
   font-size: 1.25rem;
+  font-weight: bold;
 }
 
 p.typography-sample {
@@ -245,18 +251,13 @@ em {
 }
 
 a {
-  font-family: var(--primary-font);
+  font-family: var(--secondary-font);
   color: var(--link-color);
-  font-weight: bold;
-  text-decoration: none;
   transition: all 0.2s;
 }
 
 a:hover {
-  color: var(--link-hover-color);
-  font-size: 4rem;
-  background-color: var(--color-4);
-  opacity: 0.1;
+  opacity: 70%;
 }
 
 p[class*="font-details-"] {
@@ -301,6 +302,6 @@ footer {
 
 @media (min-width: 900px) {
   .adjectives ul {
-    flex-direction: row;
+    flex-direction: column;
   }
 }
